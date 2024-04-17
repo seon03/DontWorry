@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 
-function OCRPage() {
+function App() {
     const [selectedFile, setSelectedFile] = useState(null);
 
     const handleFileChange = (event) => {
@@ -106,4 +106,4 @@ function OCRPage() {
     )
 }
 
-export default OCRPage;
+export default App;
