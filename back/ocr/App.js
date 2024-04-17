@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import axios from 'axios';
-import '../styles = css/OCRPage.css';
-import textImg from '../assets/문자내역.png';
+import './OCRPage.css';
+import './AddModal.css'
+import textImg from './문자내역.png';
 //사진등록버튼
-import '../styles = css/UploadButton.css';
+import './UploadButton.css';
 import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 //사진불러오기버튼
 import { IconButton } from '@mui/material';
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
@@ -18,6 +20,13 @@ function OCRPage() {
     };
 
     const [uploadedImage, setUploadedImage] = useState(null);
+
+    const [modalOpen, setModalOpen] = useState(false);
+    const modalBackground = useRef();
+    const navigate  = useNavigate();
+    const navigateToAdd = () => {
+        navigate("/home");
+    };
 
     const handleUpload = () => {
         const formData = new FormData();
@@ -33,6 +42,16 @@ function OCRPage() {
             console.error('Error uploading file: ', error);
             });
     };
+
+    const clickUploadButton = () => {
+        handleUpload(); 
+        setModalOpen(true);
+    };
+
+    const clickAddButton = () => {
+        setModalOpen(false);
+        navigateToAdd();
+    };
     
     return (
         <div className="bg">
@@ -46,7 +65,30 @@ function OCRPage() {
                         )}
                 </div>
             </div>
-            <Button className="upload-button"onClick={handleUpload}>등록</Button>
+            <Button className="upload-button" onClick={clickUploadButton}>등록</Button>
+            {
+                modalOpen &&
+                <div className={'modal-container'} ref={modalBackground} onClick={e => {
+                    if (e.target === modalBackground.current) {
+                    setModalOpen(false);
+                    }
+                }}>
+                    <div className={'modal-content'}>
+                        <p className='money-title'>새 수입/지출 추가</p>
+                        <form className="ocr-content">
+                            <div className="input" placeholder="날짜">날짜 4월 18일</div>
+                            {/*<div className="input" placeholder="일정">일정 선택</div>*/}
+                            <div className="input" placeholder="내용">내용 추가</div>
+                            {/*<div className="money-type">자산 선택</div>*/}
+                            {/*<div className="money-category">카테고리 선택</div>*/}
+                            <button className={'modal-close-btn'} onClick={clickAddButton}>
+                                추가하기
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+            }
             <div className="bottom-square">
                 <IconButton 
                     variants="contained" 
