@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './App.css';
-import textImg from '.문자내역.png';
+import '../styles = css/OCRPage.css';
+import textImg from '../assets/문자내역.png';
 //사진등록버튼
-import './UploadButton.css';
+import '../styles = css/UploadButton.css';
 import { Button } from 'react-bootstrap';
 //사진불러오기버튼
 import { IconButton } from '@mui/material';
 import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
 
-function App() {
+function OCRPage() {
     const [selectedFile, setSelectedFile] = useState(null);
 
     const handleFileChange = (event) => {
@@ -42,7 +42,7 @@ function App() {
                 {selectedFile ? (
                             <img className="문자내역" src={URL.createObjectURL(selectedFile)} alt="Selected" />
                         ) : (
-                            <InsertPhotoIcon style={{ display: "none" }} />
+                            <div className="불러오기">사진</div>
                         )}
                 </div>
             </div>
@@ -64,4 +64,4 @@ function App() {
     )
 }
 
-export default App;
+export default OCRPage;
