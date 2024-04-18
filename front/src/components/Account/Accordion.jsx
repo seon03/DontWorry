@@ -24,7 +24,7 @@ const Accordion = () => {
     return (
         <ScheduleProvider>
             <ul className="accordion">
-                //백엔드에서 가져온 데이터
+                {/*백엔드에서 가져온 데이터*/}
                 {acc.map((acc) => (
                     <AccordionItem key={acc.schedule} schedule={acc.title} expesne={acc.cost} />
                 ))}
@@ -32,7 +32,7 @@ const Accordion = () => {
                     <AccordionItem schedule={post.title} />
                 ))}
 
-                //flask예산예측에서 가져온 데이터
+                {/*flask예산예측에서 가져온 데이터*/}
                 {accordionData.map((data, index) => (
                     <AccordionItem key={index} schedule={data.schedule_name} expected={data.prediction_result} income={data.income} expense={data.expense} details={data.details}/>
                 ))}
