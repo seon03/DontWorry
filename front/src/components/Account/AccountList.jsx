@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 //import MonthFilter from "../filter/MonthFilter";
 import AccordionItems from "./AccordionItems";
 import UnexpectedItem from "./UnexpectedItem";
@@ -23,7 +23,7 @@ function AccountList(props) {
 
     return (
         <div className="two-Lists">
-            <AccordionItems key={index} date={items.date} content={items.content} />
+            <AccordionItems  date={items.date} content={items.content} />
             <UnexpectedItem />
         </div>
         
