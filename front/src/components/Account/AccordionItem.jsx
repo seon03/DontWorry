@@ -1,7 +1,7 @@
 // AccordionItem.jsx
 import React, { useState, useRef } from "react";
 
-const AccordionItem = ({ schedule, expected, income, expense, details }) => {
+const AccordionItem = ({ schedule, expected, income, expense, details, categoryId }) => {
     const [clicked, setClicked] = useState(false);
     const contentEl = useRef();
 
@@ -15,7 +15,14 @@ const AccordionItem = ({ schedule, expected, income, expense, details }) => {
                 <div className="frame-title">
                     {/* 카테고리 박스 */}
                     <div className="category">
-                        <div className='rectangle-4062'></div>
+                        <div className='rectangle-4062'>
+                          <div className="category-icon">
+                            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+                            <span className="material-symbols-outlined">
+                              event_note
+                            </span>
+                          </div>
+                        </div>
                     </div>
                     {/* 일정-수입-지출 내용 */}
                     <div className='frame-1'>
