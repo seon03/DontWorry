@@ -1,0 +1,38 @@
+.budget-status,
+.budget-status * {
+  box-sizing: border-box;
+}
+.budget-status {
+  height: 65px;
+  position: relative;
+  left: 25px;
+  top: 50px;
+}
+
+.budget {
+  color: #000000;
+  text-align: right;
+  font-family: "PlusJakartaSans-Bold", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+  position: absolute;
+  left: 268px;
+  top: 7px;
+  width: 109.69px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.budget-month {
+  color: #000000;
+  text-align: left;
+  font-family: "PlusJakartaSans-SemiBold", sans-serif;
+  font-size: 22px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
