@@ -10,5 +10,6 @@ React 설치 방법
 4. 실행하려면 
 
     cd dont-worry
+
     npm start
 5. 웹브라우저에서 localhost:3000 자동으로 열려서 실행됨
