@@ -7,6 +7,8 @@ React 설치 방법
 3. Terminal에서
     
     npx create-react-app dont-worry
-4. 실행하려면 cd dont-worry
+4. 실행하려면 
+
+    cd dont-worry
 5. npm start
 -> 웹브라우저에서 localhost:3000 자동으로 열려서 실행됨
