@@ -1,7 +1,7 @@
 예산 예측 모델
-
-: front->flask->back->front 순서로 데이터 전송
 ---
+: front->flask->back->front 순서로 데이터 전송
+
 
 홈 화면에서 새 일정 등록 버튼 클릭
 
