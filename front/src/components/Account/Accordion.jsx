@@ -1,5 +1,5 @@
 // Accordion.jsx
-import React from 'react';
+import React , { useEffect, useState } from 'react';
 import AccordionItem from "./AccordionItem";
 import { useScheduleContext } from '../../contexts/ScheduleContext';
 import { ScheduleProvider } from '../../contexts/ScheduleContext';
