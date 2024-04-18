@@ -12,7 +12,7 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 3rem auto 1rem;
+  margin: 3rem auto 3rem;
   padding: 0 10px;
 }
 
@@ -31,6 +31,7 @@ body {
   border-radius: 15px;
   box-shadow: 2px 2px 6.5px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px; /* 각 아이템 사이의 간격 설정 */
+  max-width: 100%;
 }
 
 
@@ -62,6 +63,7 @@ body {
   color: hsl(0, 0%, 0%);
   padding: 10px;
   border-radius: 0 0 15px 15px;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .answer {
@@ -135,6 +137,14 @@ body {
   position: absolute;
   left: 2px;
   top: 3px;
+
+}
+
+.category-icon {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .frame-1 { /*일정-수입지출 전체박스*/
@@ -143,8 +153,9 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
+  position:relative;
 }
+
 
 .schedule-expected { /*일정 전체박스*/
   display: flex;
@@ -184,7 +195,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   flex-shrink: 0;
-  position: relative;
+  position: absolute;
 }
 
 .income {/*수입내용*/
@@ -200,6 +211,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  left: 100px;
 }
 
 .expense { /*지출내용*/
@@ -215,5 +227,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  left: 60px;
   gap: 10px;
 }
