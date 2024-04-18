@@ -6,20 +6,28 @@ import "../../styles = css/AddModal.css";
 import { useScheduleContext } from "../../contexts/ScheduleContext";
 import { ScheduleProvider } from "../../contexts/ScheduleContext"; // ScheduleProvider 추가
 
-const ScheduleAddModal = () => {
+const ScheduleAddModal = (props) => {
     const { updateScheduleData } = useScheduleContext();
     const [modalOpen, setModalOpen] = useState(false);
     const modalBackground = useRef();
     const navigate = useNavigate();
+    const [post, setPost] = useState();
+
+    const changeValue = (event) => {
+        setPost({
+            ...post,
+            [event.target.name] : event.target.value,
+        });
+    }
 
     const addScheduleButton = (event) => {
         event.preventDefault();
-        fetch('http://localhost:8080/api/v1/schedule', {
+        fetch('http://localhost:8080/api/v1/schedule', { //요청보내기
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json; charset-utf-8',
             },
-            body: JSON.stringify(post),
+            body: JSON.stringify(post)
         })
             .then((res) => res.json())
             .then((res) => console.log(res), props.history.push('/'));
@@ -76,8 +84,8 @@ const ScheduleAddModal = () => {
                         <div className={"modal-content"}>
                             <h1>새 일정 추가</h1>
                             <form onSubmit={addScheduleButton}>
-                                <input className="input" name="name" placeholder="일정 이름*" required />
-                                <input className="input" name="memo" placeholder="여기에 메모하세요.." />
+                                <input className="input" name="name" placeholder="일정 이름*" required onChange={changeValue}/>
+                                <input className="input" name="memo" placeholder="여기에 메모하세요.." onChange={changeValue}/>
                                 <input className="input" name="date" type="date" placeholder="날짜" required />
                                 <div>카테고리</div>
                                 <select className="input" name="category" required>
