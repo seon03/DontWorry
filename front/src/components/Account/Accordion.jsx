@@ -1,5 +1,6 @@
 // Accordion.jsx
 import React , { useEffect, useState } from 'react';
+import {faqs} from "./data";
 import AccordionItem from "./AccordionItem";
 import { useScheduleContext } from '../../contexts/ScheduleContext';
 import { ScheduleProvider } from '../../contexts/ScheduleContext';
@@ -40,6 +41,9 @@ const Accordion = () => {
                 ))}
                 {posts.map((post) => (
                     <AccordionItem schedule={post.title} />
+                ))}
+                {faqs.map((faq, index) => (
+                    <AccordionItem key={index} schedule={faq.schedule} categoryId={faq.categoryId} expense={faq.schedule} income={faq.income} details={faq.details} />
                 ))}
 
                 {/*flask예산예측에서 가져온 데이터*/}
