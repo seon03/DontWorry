@@ -10,13 +10,13 @@ CORS(app)
 @app.route('/predict', methods=['POST'])
 def predict_budget():
     # 데이터셋 로드
-    df = pd.read_csv('C:/Users/서선아/dont-worry/가계부1.csv')
+    df = pd.read_csv('파일경로/가계부1.csv')
     df = df.fillna(0)
     # 열 삭제 
     df.drop(['id', 'parent', '자산', '내용', '수입/지출', '소분류', '메모'], axis=1, inplace=True)
 
     # 데이터셋 로드2
-    df2 = pd.read_csv('C:/Users/서선아/dont-worry/가계부2.csv')
+    df2 = pd.read_csv('파일경로/가계부2.csv')
     df2 = df2.drop(df2.columns[3: 256], axis=1)
 
     #데이터셋 합
