@@ -7,7 +7,7 @@ React 실행 방법
 3. Terminal에서
     
     npx create-react-app dont-worry
-4 dont-worry 폴더에 깃헙 파일 업로드
+4. dont-worry 폴더에 깃헙 파일 업로드
 5. 실행하려면 
 
     cd dont-worry
