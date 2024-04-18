@@ -6,7 +6,7 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 const AlertButton = () => {
     return (
         <>
-        <IconButton variants="contained" sx={{m:2, color:"black", top: -30, left: 360}}>{<NotificationsNoneIcon/>}</IconButton>
+        <IconButton variants="contained" sx={{m:2, color:"black", top: -30, left: 300}}>{<NotificationsNoneIcon/>}</IconButton>
         </>
     ) ;
 }
