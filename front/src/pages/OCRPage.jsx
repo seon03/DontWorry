@@ -74,11 +74,12 @@ function OCRPage() {
                     }
                 }}>
                     <div className={'modal-content'}>
-                        <p className='money-title'>새 수입/지출 추가</p>
+                        <p className='money-title'>새 지출 추가</p>
                         <form className="ocr-content">
-                            <div className="input" placeholder="날짜">날짜 4월 18일</div>
+                            <div className="input" placeholder="날짜">날짜 4월 19일</div>
                             {/*<div className="input" placeholder="일정">일정 선택</div>*/}
-                            <div className="input" placeholder="내용">내용 추가</div>
+                            <div className="input" placeholder="내용">김선생</div>
+                            <div className="input" placeholder="내용">5,500원</div>
                             {/*<div className="money-type">자산 선택</div>*/}
                             {/*<div className="money-category">카테고리 선택</div>*/}
                             <button className={'modal-close-btn'} onClick={clickAddButton}>
