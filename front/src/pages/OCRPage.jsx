@@ -25,9 +25,10 @@ function OCRPage() {
     const modalBackground = useRef();
     const navigate  = useNavigate();
     const navigateToAdd = () => {
-        navigate("/home");
+        navigate("/home3");
     };
 
+    /*
     const handleUpload = () => {
         const formData = new FormData();
         formData.append('file', selectedFile);
@@ -42,16 +43,21 @@ function OCRPage() {
             console.error('Error uploading file: ', error);
             });
     };
+    */
 
+    /*
     const clickUploadButton = () => {
         handleUpload(); 
         setModalOpen(true);
     };
+    */
 
+    /*
     const clickAddButton = () => {
         setModalOpen(false);
         navigateToAdd();
     };
+    */
     
     return (
         <div className="bg">
@@ -61,11 +67,11 @@ function OCRPage() {
                 {selectedFile ? (
                             <img className="문자내역" src={URL.createObjectURL(selectedFile)} alt="Selected" />
                         ) : (
-                            <div className="불러오기">사진</div>
+                            <div className="불러오기">photo</div>
                         )}
                 </div>
             </div>
-            <Button className="upload-button" onClick={clickUploadButton}>등록</Button>
+            <Button className="upload-button" onClick={() => setModalOpen(true)}>등록</Button>
             {
                 modalOpen &&
                 <div className={'modal-container'} ref={modalBackground} onClick={e => {
@@ -73,20 +79,23 @@ function OCRPage() {
                     setModalOpen(false);
                     }
                 }}>
-                    <div className={'modal-content'}>
-                        <p className='money-title'>새 지출 추가</p>
+                    <div className={'modal-content-ocr'}>
+                        <p className='money-title-ocr'>지출 내역 확인</p>
+                        <br/>
                         <form className="ocr-content">
-                            <div className="input" placeholder="날짜">날짜 4월 19일</div>
+                            <div className="input" placeholder="날짜">6월 7일(금)</div>
+                            <br/>
                             {/*<div className="input" placeholder="일정">일정 선택</div>*/}
-                            <div className="input" placeholder="내용">김선생</div>
-                            <div className="input" placeholder="내용">5,500원</div>
+                            <div className="input" placeholder="내용">내용: 바디쉐프</div>
+                            <br/>
+                            <div className="input" placeholder="내용">금액: 8,500원</div>
+                            <br/>
                             {/*<div className="money-type">자산 선택</div>*/}
                             {/*<div className="money-category">카테고리 선택</div>*/}
-                            <button className={'modal-close-btn'} onClick={clickAddButton}>
+                            <button className={'modal-close-btn'} onClick={()=> navigate('/home6')}>
                                 추가하기
                             </button>
                         </form>
-                        
                     </div>
                 </div>
             }
