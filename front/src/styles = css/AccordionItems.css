@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.4;
+  color: #444;
+}
+
+.container {
+  max-width: 600px;
+  margin: 3rem auto 1rem;
+  padding: 0 12px;
+}
+
+.heading {
+  font-size: 23px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.accordion {
+  list-style: none;
+}
+
+.accordion_item {
+  border-top: 1px solid #ffffff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 6.5px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px; /* 각 아이템 사이의 간격 설정 */
+  max-width: 340px;
+}
+
+
+
+.button-schedule-account {
+  font-size: 16px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  border-color: #444;
+  color: #000000;
+  text-align: left;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  padding-left: 20px;
+
+}
+
+.control-accordion-item {
+  font-size: 20px;
+  color: #cacaca;
+}
+
+.answer {
+  background-color: #ffffff;
+  color: hsl(0, 0%, 0%);
+  padding: 12px;
+  padding-right: 10px;
+  padding-left: 20px;
+  border-radius: 0 0 15px 15px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  border-radius: 2px;
+  border-color: 2px;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column; /* 내용을 세로 방향으로 정렬 */
+}
+
+.item {
+  display: flex;
+  justify-content: space-between; /* 내용을 양 끝으로 정렬 */
+}
+
+.item-name {
+  flex: 1; /* 아이템 이름은 확장 가능한 크기로 설정 */
+  text-align: left; /* 아이템 이름을 왼쪽으로 정렬 */
+}
+
+.item-price {
+  flex: 1; /* 아이템 가격은 확장 가능한 크기로 설정 */
+  text-align: right; /* 아이템 가격을 오른쪽으로 정렬 */
+}
+
+
+
+/* activate toggle */
+.accordion_item.active .button {
+  background-color: #ffffff;
+  border-radius: 15px 15px 0 0;
+}
+.answer_wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: max-height ease 0.2s; /* max-height에 대한 transition 추가 */
+  max-height: 400px; /* 초기에는 펼쳐진 상태의 최대 높이 설정 */
+}
+
+.accordion_item.active .answer_wrapper {
+  max-height: 1000px; /* 펼쳐진 상태일 때의 최대 높이 설정 */
+}
+
+/* .answer_wrapper.open {
+  height: auto;
+} */
+
+.frame-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+
+
+.frame-1 { /*일정-수입지출 전체박스*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position:relative;
+}
+
+
+.schedule-expected { /*일정 전체박스*/
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 140px;
+  position: relative;
+}
+
+.div-2-span-accordion-item { /*일정 내용*/
+  color: #000000;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.expected-accordion-item { /*예상지출*/
+  color: #adadad;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 13px;
+  line-height: 140%;
+  font-weight: 600;
+  position: relative;
+  width: 142px;
+  height: 16.03px;
+}
+
+.in-out-accordion-item { /*수입지출 전체박스*/
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: absolute;
+}
+
+.income-accordion-item {/*수입내용*/
+  color: #4cb5ff;
+  text-align: right;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  width: 85px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  left: 0px;
+}
+
+.expense-accordion-item { /*지출내용*/
+  color: #ff5880;
+  text-align: cneter;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+  position: relative;
+  width: 100px;
+  height: 16.03px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  left: 40px;
+  gap: 0px;
+}
+.expected-home-two {
+  color: #adadad;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  width: 200px;
+  height: 16.03px;
+  left: 125px;
+}

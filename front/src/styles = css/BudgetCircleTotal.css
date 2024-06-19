@@ -1,0 +1,181 @@
+.budget-circle-total,
+.budget-circle-total * {
+  box-sizing: border-box;
+}
+.budget-circle-total {
+  background: #ffffff;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+.budget-circle-month {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-weight: bold;
+  position: absolute;
+  left: 52px;
+  top: 53px;
+  width: 271px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ellipse-117-절약 {
+  background: #ebffca;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  align-items: center;
+  justify-content: center;
+}
+.ellipse-1172 {
+  background: #d5fffc;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  align-items: center;
+  justify-content: center;
+}
+.ellipse-1173 {
+  background: #fff1f6;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  align-items: center;
+  justify-content: center;
+}
+.budget-total-money {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.5;
+  position: absolute;
+  left: 136px;
+  top: 343px;
+  width: 104px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-title-예산 {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-weight: bold;
+  position: absolute;
+  left: 131px;
+  top: 300px;
+  width: 113px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.description,
+.description * {
+  box-sizing: border-box;
+}
+.description {
+  overflow: visible;
+  width: 26px;
+  height: 29px;
+  position: absolute;
+  left: 327px;
+  top: 26px;
+  object-fit: cover;
+}
+
+.ellipse-121 {
+  background: #ffe2ee;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 289px;
+  top: 25px;
+}
+.ellipse-118 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #606367;
+  border-width: 2px;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 294px;
+  top: 38px;
+}
+.ellipse-119 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #606367;
+  border-width: 2px;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 303px;
+  top: 32px;
+}
+.ellipse-120 {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #606367;
+  border-width: 2px;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 306px;
+  top: 41px;
+}
+
+.ellipse-115 {
+    background: #ffc6c6;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 36px;
+    top: 184px;
+    transition: opacity 1s ease-out; /* opacity 변화에 대한 transition 효과 추가 */
+  }
+  
+  .ellipse-115.clicked {
+    opacity: 0; /* 클릭 후에 opacity를 0으로 설정하여 fade-out 효과 만듦 */
+  }
+
+  .ellipse-117-절약.clicked,
+  .ellipse-1172.clicked,
+  .ellipse-1173.clicked {
+    opacity: 1; /* 클릭 후에도 opacity를 1로 유지하여 보이도록 함 */
+  }
+  
+
+  
+  .circle-text {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 가운데 정렬 */
+  }
+  
+  .ellipse-117-절약,
+  .ellipse-1172,
+  .ellipse-1173 {
+    transition: width 0.5s ease, height 0.5s ease; /* 크기 변화에 대한 transition 효과를 추가합니다. */
+  }

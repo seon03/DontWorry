@@ -1,0 +1,128 @@
+.create-account,
+.create-account * {
+  box-sizing: border-box;
+}
+.create-account {
+  background: #ffffff;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+.page-title-google {
+  color: #000000;
+  text-align: center;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 170px);
+  top: 103px;
+  width: 354px;
+}
+.page-title2-google {
+  color: var(--gray-3, #828282);
+  text-align: left;
+  font-family: "SfProText-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 45px;
+  top: 282px;
+  width: 290px;
+}
+.page-title3-google {
+  color: var(--gray-3, #828282);
+  text-align: left;
+  font-family: "SfProText-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 45px;
+  top: 359px;
+  width: 290px;
+}
+.rectangle-2-google,
+.rectangle-3-google {
+  border-radius: 20px;
+  border-style: solid;
+  border-color: var(--gray-3, #828282);
+  border-width: 0.5px;
+  width: 340px;
+  height: 60px;
+  position: absolute;
+  left: 15px;
+  padding: 10px;
+  font-size: 16px;
+}
+.rectangle-2-google {
+  top: 261px;
+}
+.rectangle-3-google {
+  top: 339px;
+}
+.vector-google {
+  width: 1.45%;
+  height: 1.29%;
+  position: absolute;
+  right: 91.55%;
+  left: 7%;
+  bottom: 91.09%;
+  top: 7.62%;
+  overflow: visible;
+  cursor: pointer;
+}
+.page-title4-google {
+  color: #ad8d8f;
+  text-align: center;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 15px;
+  top: 594px;
+  width: 354px;
+}
+.page-title5-google {
+  color: var(--gray-2, #4f4f4f);
+  text-align: center;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 15px;
+  top: 152px;
+  width: 354px;
+}
+.button-google {
+  width: 340px;
+  height: 60px;
+  position: absolute;
+  left: 15px;
+  top: 499px;
+}
+.rectangle-22-google {
+  background: #ffc6c6;
+  border-radius: 20px;
+  width: 96.89%;
+  height: 100%;
+  position: absolute;
+  right: 0.56%;
+  left: 2.54%;
+  bottom: 0%;
+  top: 0%;
+}
+.page-title6-google {
+  color: #ffffff;
+  text-align: center;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 30%;
+  top: 33.33%;
+  height: 36.67%;
+}

@@ -1,0 +1,110 @@
+.bg,
+.bg {margin:0; padding:0}
+
+.bg {
+    background: #ffffff;
+}
+
+.new-account-image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.box{
+    padding:1rem;
+    width:80%;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    margin:0 auto;
+    display: block;
+    align-items:center;
+    position: flex;
+    margin: 20px;
+}
+
+.test-gradient-border.border-image{
+    border:10px solid;
+    border-image:linear-gradient(to  bottom right ,#FFB6B6 ,#FFF0D3, #FFC7BE);
+    border-image-slice:1;
+    position: absolute;
+    top:180px;
+}
+
+.문자내역 {
+    width: 100%;
+    align-items:center;
+    margin:0 auto;
+    display: block;
+}
+
+.불러오기 {
+    padding: 5rem;
+    margin: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.ocr-content {
+    margin-top: 10px;
+}
+
+.money-title {
+    color: #000000;
+    font-family: "Bold", sans-serif;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.top-square {
+    width: 100%;
+    height: 16vh;
+    background: #FFB6B6;
+    margin:0;
+    display: block;
+}
+
+.bottom-square {
+    background: linear-gradient( to bottom, #FFB6B6 ,#FFF0D3 97%);;
+    margin-top:20px;
+    display: flex;
+    height: 16vh;
+    position: absolute;
+    top:550px;
+    width: 100%
+}
+
+.bg {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.modal-content-ocr {
+    background-color: #ffffff;
+    width: 300px;
+    height: 260px;
+    padding: 15px;
+}
+
+.modal-content-ocr {
+    margin: 70% auto; /* 위에서 10%를 30%로 변경 */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 35px;
+}
+
+.money-title-ocr {
+    font-size: 17px; /* 원하는 크기로 조정 */
+    margin-bottom: 0px; /* 제목과 내용 간격 조정 */
+    margin-top: 10px;
+    margin-bottom: 7px;
+    position: relative;
+    left: 31%;
+}

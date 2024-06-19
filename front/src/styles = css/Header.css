@@ -1,0 +1,15 @@
+.profile-header {
+    box-sizing:border-box;
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+
+.budget-header {
+    position: sticky; /* 화면 상단에 고정 */
+    top: 0;
+    width: 100%; /* 화면 전체 너비로 설정 */
+    height: 230px;
+    z-index: 2; /* 다른 요소 위에 표시되도록 설정 */
+    background: #ffa6a6
+}

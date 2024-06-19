@@ -1,0 +1,331 @@
+.goal-descrlbe-page-des,
+.goal-descrlbe-page-des * {
+  box-sizing: border-box;
+}
+.goal-descrlbe-page-des {
+  background: #ffffff;
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-4289-des {
+  background: #ffffff;
+  border-radius: 12px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 318px;
+  height: 85px;
+  position: absolute;
+  left: 28px;
+  top: 148px;
+}
+
+.dony_goal_describe {
+    height: 85px;
+    position: absolute;
+    left: 200px;
+    top: 70px;
+}
+
+.div-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 25px;
+  top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div2-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 34px;
+  top: 285px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._1-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 32px;
+  top: 541px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div3-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 32px;
+  top: 416px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._170-000-des {
+  color: #ffc6c6;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 34px;
+  top: 321px;
+  width: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._204-des {
+  color: #ffc6c6;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 35px;
+  top: 573px;
+  width: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+._430-000-des {
+  color: #ffc6c6;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  left: 34px;
+  top: 450px;
+  width: 273px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div4-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 32px;
+  top: 113px;
+  width: 318px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.line-229-des {
+  border-style: solid;
+  border-color: #ffc6c6;
+  border-width: 1px 0 0 0;
+  width: 308px;
+  height: 0px;
+  position: absolute;
+  left: 34px;
+  top: 357.5px;
+}
+.line-230-des {
+  border-style: solid;
+  border-color: #ffc6c6;
+  border-width: 1px 0 0 0;
+  width: 308px;
+  height: 0px;
+  position: absolute;
+  left: 32px;
+  top: 487.5px;
+}
+._60-16-76-des {
+  color: #b9b9b9;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 34px;
+  top: 363px;
+  width: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+._17-12-204-des {
+  color: #b9b9b9;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 35px;
+  top: 615px;
+  width: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+._60-17-43-des {
+  color: #b9b9b9;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 38px;
+  top: 494px;
+  width: 301px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.div5-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 141px;
+  top: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div6-des {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 274px;
+  top: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rectangle-4290-des {
+  background: #ffe1e3;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  width: 74px;
+  height: 45px;
+  position: absolute;
+  left: 60px;
+  top: 168px;
+}
+._5-des {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 64px;
+  top: 182px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-4294-des {
+  background: #ffe1e3;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 1px;
+  width: 89px;
+  height: 45px;
+  position: absolute;
+  left: 178px;
+  top: 168px;
+}
+.div7-des {
+  color: #000000;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 200px;
+  top: 182px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangle-4293-des {
+  background: #ffc6c6;
+  width: 186px;
+  height: 59px;
+  position: absolute;
+  left: 189px;
+  top: 632px;
+}
+.rectangle-4295-des {
+  border-style: solid;
+  border-color: #ffc6c6;
+  border-width: 1px;
+  width: 189px;
+  height: 59px;
+  position: absolute;
+  left: 0px;
+  top: 632px;
+}
+.div8-des {
+  color: #ffc6c6;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 78px;
+  top: 652px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div9-des {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 270px;
+  top: 652px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line-231-des {
+  border-style: solid;
+  border-color: #ffc6c6;
+  border-width: 1px 0 0 0;
+  width: 308px;
+  height: 0px;
+  position: absolute;
+  left: 34px;
+  top: 609px;
+}

@@ -1,0 +1,41 @@
+.budget-status,
+.budget-status * {
+  box-sizing: border-box;
+}
+
+.budget-status {
+  height: 115px; /* 수정된 부분: 전체 높이를 65px에서 115px로 증가 */
+  position: relative;
+  top: 40px; /* 수정된 부분: 전체를 50px 아래로 이동 */
+  width: 90%;
+  margin-left:20px;
+}
+
+.budget-status-total {
+  color: #000000;
+  text-align: right;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 700;
+  position: absolute;
+  left: 220px;
+  top: 15px;
+  width: 109.69px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+.budget-status-month {
+  color: #000000;
+  text-align: left;
+  font-family: "PlusJakartaSans-SemiBold", sans-serif;
+  font-size: 26px;
+  line-height: 130%;
+  font-weight: 600;
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
