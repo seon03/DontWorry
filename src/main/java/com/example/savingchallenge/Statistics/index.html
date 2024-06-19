@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h1>Yearly Expenses Statistics</h1>
+<canvas id="statisticsChart" width="400" height="200"></canvas>
+<script>
+    fetch('/api/statistics')
+        .then(response => response.json())
+        .then(data => {
+            const labels = [];
+            const actualExpenses = [];
+            const divAccounts = [];
+            const expAccounts = [];
+
+            for (const [year, values] of Object.entries(data)) {
+                labels.push(year);
+                actualExpenses.push(values.actualExpense);
+                divAccounts.push(values.divAccount);
+                expAccounts.push(values.expAccount);
+            }
+
+            const ctx = document.getElementById('statisticsChart').getContext('2d');
+            const statisticsChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Actual Expenses',
+                            data: actualExpenses,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'Divided Accounts',
+                            data: divAccounts,
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        },
+                        {
+                            label: 'Expected Accounts',
+                            data: expAccounts,
+                            borderColor: 'rgba(54, 162, 235, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+</script>
+</body>
+</html>
