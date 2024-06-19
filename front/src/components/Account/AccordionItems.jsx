@@ -4,6 +4,7 @@ import AccordionHeader from './AccordionHeader';
 import Accordion from './Accordion';
 
 const AccordionItems = () => {
+  /*
   const [day, setDays] = useState('');
 
     useEffect(() => {
@@ -11,6 +12,7 @@ const AccordionItems = () => {
         .then((res) => res.json())
         .then((res) => {setDays(res)});
     }, [day]);
+  */
 
   return (
     <div className="container">
@@ -21,3 +23,18 @@ const AccordionItems = () => {
 }
 
 export default AccordionItems;
+
+/* <AccordionHeader key={day.scheduleId} scheduleDate={scheduleDate}/> */
+
+/*
+return (
+    <div className="container">
+      {scheduleData.map((schedule, index) => (
+        <div key={index}>
+          <AccordionHeader schedule={schedule} />
+          <Accordion schedule={schedule} />
+        </div>
+      ))}
+    </div>
+  );
+*/

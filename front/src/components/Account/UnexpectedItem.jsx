@@ -43,13 +43,6 @@ const unexdata = [
         category: '교통비',
         income: '', 
         expense: '8,000원'
-    },
-    {
-        id: '0013',
-        title: '서점',
-        category: '도서',
-        income: '', 
-        expense: '2,000원'
     }
 ]
 

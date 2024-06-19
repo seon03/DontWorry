@@ -1,16 +1,16 @@
 // Accordion.jsx
-import React , { useEffect, useState } from 'react';
-import {faqs} from "./data";
+import React , { useState } from 'react';
+//import {faqs} from "./data";
 import AccordionItem from "./AccordionItem";
 import { useScheduleContext } from '../../contexts/ScheduleContext';
 import { ScheduleProvider } from '../../contexts/ScheduleContext';
 
 const Accordion = () => {
     const { accordionData } = useScheduleContext();
-    const [main, setMains] = useState([]);
-    const [posts, setPosts] = useState([]);
-    const [acc, setAcc] = useState([]);
-
+    /*const [main, setMains] = useState([]);*/
+    /*const [posts, setPosts] = useState([]);*/
+    /*const [acc, setAcc] = useState([]);*/
+    /*
     useEffect(() => {
         fetch('http://localhost:8080/api/v1/main')
         .then((res) => res.json())
@@ -28,11 +28,13 @@ const Accordion = () => {
         .then((res) => res.json())
         .then((res) => {setAcc(res)});
     }, [acc]);
+    */
 
     return (
         <ScheduleProvider>
             <ul className="accordion">
-                {/*백엔드에서 가져온 데이터*/}
+                {/*
+                //백엔드에서 가져온 데이터
                 {main.map((main) => (
                     <AccordionItem key={main.scheduleId} schedule={main.title} income={main.income} expesne={main.expense} />
                 ))}
@@ -42,14 +44,14 @@ const Accordion = () => {
                 {posts.map((post) => (
                     <AccordionItem schedule={post.title} />
                 ))}
-                {faqs.map((faq, index) => (
-                    <AccordionItem key={index} schedule={faq.schedule} categoryId={faq.categoryId} expense={faq.schedule} income={faq.income} details={faq.details} />
-                ))}
-
-                {/*flask예산예측에서 가져온 데이터*/}
+            
+                
+                */}
+                {/*//flask 서버 예산예측 api에서 가져온 데이터*/}
                 {accordionData.map((data, index) => (
                     <AccordionItem key={index} schedule={data.schedule_name} expected={data.prediction_result} income={data.income} expense={data.expense} details={data.details}/>
                 ))}
+                
             </ul>
         </ScheduleProvider>
     );
