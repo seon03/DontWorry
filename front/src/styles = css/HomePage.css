@@ -1,7 +1,7 @@
 html,
 .body {
-    background-image: url('../assets/bgimg2.png'), linear-gradient(to bottom, #ffffff, #f0f0f0); /* 이미지와 배경색 지정 */
-    background-size: cover;
+    background: #ffffff;
+    background-size:auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

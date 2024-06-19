@@ -3,9 +3,9 @@
     position: fixed;
     justify-content: center;
     margin-top: 5rem;
-    top: 445px;
+    top: 560px;
     height: 40px;
-    left: 310px;
+    left: 300px;
   }
   
   .modal-open-button, .modal-close-btn {
@@ -25,20 +25,59 @@
     background: rgba(0, 0, 0, 0.5);
   }
   
-  .modal-content {
+
+  .modal-content-account {
     background-color: #ffffff;
     width: 300px;
-    height: 300px;
+    height: 420px;
     padding: 15px;
+    margin: 64% auto; /* 위에서 10%를 30%로 변경 */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 35px;
+    position:absolute;
+    top: 0px;
   }
 
-  .modal-content h1 {
-    font-size: 24px; /* 원하는 크기로 조정 */
+  .modal-content-account h1 {
+    font-size: 17px; /* 원하는 크기로 조정 */
     font-weight: bold;
     margin-bottom: 0px; /* 제목과 내용 간격 조정 */
-    transform: translate(0%, -80%);
+    margin-top: -10px;
+    margin-bottom: 7px;
+    position: relative;
+    left: 20%;
 }
 
   .modal-close-btn {
-    width: 260px;
+    width: 258px;
+    font-size: 16px;
   }
+  
+  .ocr-button {
+    float: left;
+    color:#ffffff;
+    margin: 1px;
+    height: 40px;
+    width: 40px;
+    background-color: #ffa2a2;
+    border-radius: 20px;
+  }
+
+.input_일정,
+.input_내용,
+input[type="date"],
+select {
+  width: calc(100% - 22px);
+  height: 40px;
+  margin: 7px 0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size:15px;
+  font-family: 'Inter', 'bold';
+}
+
+input[type="date"]::before {content:attr(date-placeholder);width:100%}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {display: none}

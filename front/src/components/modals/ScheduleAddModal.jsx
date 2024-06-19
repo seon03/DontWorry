@@ -1,108 +1,103 @@
-// ScheduleAddModal.js
-import React, { useState, useRef, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles = css/AddModal.css";
-import { useScheduleContext } from "../../contexts/ScheduleContext";
-import { ScheduleProvider } from "../../contexts/ScheduleContext"; // ScheduleProvider 추가
 
-const ScheduleAddModal = (props) => {
-    const { updateScheduleData } = useScheduleContext();
+const ScheduleAddModal = () => {
     const [modalOpen, setModalOpen] = useState(false);
-    const modalBackground = useRef();
+    const [formData, setFormData] = useState({
+        name: "",
+        memo: "",
+        date: "",
+        category: ""
+    });
+
     const navigate = useNavigate();
-    const [post, setPost] = useState();
 
-    const changeValue = (event) => {
-        setPost({
-            ...post,
-            [event.target.name] : event.target.value,
+    const modalRef = useRef(null);
+
+    const handleClickOutside = (e) => {
+        if (modalRef.current && !modalRef.current.contains(e.target)) {
+            setModalOpen(false);
+        }
+    };
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
         });
-    }
+    };
 
-    const addScheduleButton = (event) => {
-        event.preventDefault();
-        fetch('http://localhost:8080/api/v1/schedule', { //요청보내기
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json; charset-utf-8',
-            },
-            body: JSON.stringify(post)
-        })
-            .then((res) => res.json())
-            .then((res) => console.log(res), props.history.push('/'));
-    
-        const formData = new FormData(event.target);
-        const date = formData.get("date");
-        const year = new Date(date).getFullYear();
-        const month = new Date(date).getMonth() + 1;
-        const day = new Date(date).getDate();
-
-        const budgetData = {
-            name: formData.get("name"),
-            memo: formData.get("memo"),
-            year: year,
-            month: month,
-            day: day,
-            amount: formData.get("amount"),
-            category: formData.get("category"),
-        };
-
-        axios
-            .post("http://127.0.0.1:5000/predict", budgetData)
-            .then((response) => {
-                console.log("예산 예측 결과:", response.data);
-                updateScheduleData(response.data);
-                navigate("/home");
-            })
-            .catch((error) => {
-                console.error("예산 예측 오류:", error);
-            });
-
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Navigate to /home7 with formData
+        navigate("/home7", { state: formData });
         setModalOpen(false);
     };
 
     return (
-        <ScheduleProvider> {/* ScheduleProvider로 감싸줌 */}
-            <>
-                <div className={"btn-schedule-wrapper"}>
-                    <button className={"modal-open-btn"} onClick={() => setModalOpen(true)}>
-                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-                        <span className="material-symbols-outlined">edit_calendar</span>
-                    </button>
-                </div>
-                {modalOpen && (
-                    <div
-                        className={"modal-container"}
-                        ref={modalBackground}
-                        onClick={(e) => {
-                            if (e.target === modalBackground.current) {
-                                setModalOpen(false);
-                            }
-                        }}
-                    >
-                        <div className={"modal-content"}>
-                            <h1>새 일정 추가</h1>
-                            <form onSubmit={addScheduleButton}>
-                                <input className="input" name="name" placeholder="일정 이름*" required onChange={changeValue}/>
-                                <input className="input" name="memo" placeholder="여기에 메모하세요.." onChange={changeValue}/>
-                                <input className="input" name="date" type="date" placeholder="날짜" required />
-                                <div>카테고리</div>
-                                <select className="input" name="category" required>
-                                    <option value="식비">식비</option>
-                                    <option value="문화생활">문화생활</option>
-                                    <option value="교통">교통</option>
-                                </select>
-        
-                                <button type="submit" className={"modal-close-btn"}>
-                                    추가하기
-                                </button>
-                            </form>
-                        </div>
+        <div className="new-schedule">
+            <div className={"btn-schedule-wrapper"}>
+                <button className={"modal-open-btn"} onClick={() => setModalOpen(true)}>
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+                    <span className="material-symbols-outlined">edit_calendar</span>
+                </button>
+            </div>
+            {modalOpen && (
+                <div className="modal" onClick={handleClickOutside}>
+                    <div className="modal-content" ref={modalRef}>
+                        <span className="close" onClick={() => setModalOpen(false)}>
+                            &times;
+                        </span>
+                        <div className="new-schedule-title-modal">새 일정</div>
+                        <form className="new-schedule-modal-form" onSubmit={handleSubmit}>
+                            <input
+                                type="text"
+                                name="name"
+                                className="input_일정이름"
+                                placeholder="일정 이름*"
+                                value={formData.name}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                type="text"
+                                name="memo"
+                                className="input_메모"
+                                placeholder="여기에 메모하세요..."
+                                value={formData.memo}
+                                onChange={handleChange}
+                                style={{height: 80 +"px"}}
+                            />
+                            <input
+                                type="date"
+                                name="date"
+                                value={formData.date}
+                                onChange={handleChange}
+                                required
+                                className="date-schedule-modal" 
+                                date-placeholder="날짜"
+                                style={{width: 258 + "px", backgroundColor: "#ffffff", color: "#000000"}}
+                            />
+                            <select
+                                name="category"
+                                value={formData.category}
+                                onChange={handleChange}
+                                required
+                                style={{backgroundColor: "#FFF2F2", color: "#000000", borderColor:"#ffffff"}}
+                            >
+                                <option value="">카테고리 선택*</option>
+                                <option value="식사">식사</option>
+                                <option value="약속">약속</option>
+                                <option value="문화생활">문화생활</option>
+                                <option value="생활용품">생활용품</option>
+                            </select>
+                            <button className={"modal-close-btn"} type="submit">일정 추가하기</button>
+                        </form>
                     </div>
-                )}
-            </>
-        </ScheduleProvider>
+                </div>
+            )}
+        </div>
     );
 };
 

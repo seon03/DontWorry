@@ -1,0 +1,243 @@
+/*.budget-liquid {
+  background: linear-gradient(to left, #ffffff, #ffffff);
+  height: 812px;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-circle {
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.category-info {
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-name {
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.category-budget {
+  color: #000000;
+}
+
+.category-circle:nth-child(1) {
+  background: #caecff;
+  width: 211px;
+  height: 211px;
+  left: 82px;
+  top: 292px;
+}
+
+.category-circle:nth-child(2) {
+  background: #bcd7ff;
+  width: 145px;
+  height: 145px;
+  left: 36px;
+  top: 263px;
+}
+
+.category-circle:nth-child(3) {
+  background: #a9d8de;
+  width: 89px;
+  height: 90px;
+  left: 162px;
+  top: 211px;
+}
+
+.category-circle:nth-child(4) {
+  background: #e2f2da;
+  width: 104px;
+  height: 102px;
+  left: 221px;
+  top: 289px;
+}
+
+.category-circle:nth-child(5) {
+  background: #a7c4de;
+  width: 190px;
+  height: 190px;
+  left: 149px;
+  top: 412px;
+}
+
+*/
+.budget-liquid {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+/* src/styles/BudgetLiquidCircle.css */
+.fluid-account-bubble-lq-c,
+.fluid-account-bubble-lq-c * {
+    box-sizing: border-box;
+}
+
+.fluid-account-bubble-lq-c {
+    background: linear-gradient(to left, #ffffff, #ffffff);
+    height: 812px;
+    position: relative;
+    overflow: hidden;
+}
+
+._6-lq-c {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+._38-lq-c {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.ellipse-117-lq-c {
+  background: #e7efff;
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  left: 8%;
+  top: 191px;
+  box-shadow: 1px 1px 10.8px 0px rgb(230, 246, 255);
+}
+
+.vector-lq-c {
+    width: 1.6%;
+    height: 1.29%;
+    position: absolute;
+    right: 90.67%;
+    left: 7.73%;
+    bottom: 91.09%;
+    top: 7.62%;
+    overflow: visible;
+}
+
+.saving-lq-c {
+  color: #5572ff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 33%;
+  top: 595px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saving-lq-c-over {
+  color: #ff5555;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 33%;
+  top: 595px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-circle {
+  touch-action: none; /* Prevent default touch behavior */
+}
+
+.modify-button {
+  position: absolute;
+  top: 75px; /* 원하는 위치에 맞게 조정 */
+  right: 20px; /* 원하는 위치에 맞게 조정 */
+  background-color: rgb(255, 255, 255);
+  color: rgb(32, 32, 32);
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.complete-button {
+  position: absolute;
+  top: 75px; /* 원하는 위치에 맞게 조정 */
+  right: 20px; /* 원하는 위치에 맞게 조정 */
+  background-color: rgb(200, 211, 255);
+  color: rgb(111, 111, 111);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.line-3-lq-c {
+  border-style: solid;
+  border-color: #5572ff;
+  border-width: 1px 0 0 0;
+  width: 286px;
+  height: 0px;
+  position: absolute;
+  left: 49px;
+  top: 622px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+
+.line-3-lq-c-over {
+  border-style: solid;
+  border-color: #ff5555;
+  border-width: 1px 0 0 0;
+  width: 286px;
+  height: 0px;
+  position: absolute;
+  left: 49px;
+  top: 622px;
+  transform-origin: 0 0;
+}
+
+.total-budget-lq-c {
+  font-family: 'Inter', sans-serif; /* 글꼴 변경 */
+  position: absolute; /* 위치 변경 */
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #5e5a5a;
+  opacity: 50%;
+}

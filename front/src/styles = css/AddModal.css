@@ -1,57 +1,30 @@
+.new-schedule {
+  position: relative;
+}
+
+
 .btn-schedule-wrapper {
-    display: flex;
-    position: fixed;
-    justify-content: center;
-    margin-top: 5rem;
-    top: 390px;
-    height: 40px;
-    left: 310px;
-  }
-  
-  .modal-open-button, .modal-close-btn {
-    cursor: pointer;
-    margin-left: auto;
-  }
-  
-.modal-container {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  margin-top: 5rem;
+  top: 500px;
+  height: 40px;
+  left: 300px;
+  margin-bottom: 5rem;
 }
-  
-.modal-content {
-    background-color: #ffffff;
-    width: 250px;
-    height: 300px;
-    padding: 15px;
-    border-radius: 13px;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    transform: translate(0%, 10%);
-  }
-
-.new-schedule-title {
-    font-size: 24px; /* 원하는 크기로 조정 */
-    font-weight: bold;
-    margin-bottom: 0px; /* 제목과 내용 간격 조정 */
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
 
 .modal-open-btn {
   /* 버튼에 대한 기본 스타일 */
-  background: linear-gradient( to bottom, #FFB6B6 ,#FFF0D3 97%); /* 버튼의 배경색 */
-  color: #bb3c54; /* 버튼의 텍스트 색상 */
-  border: 2px solid #ff5171; /* 버튼의 테두리 색상 */
+  background: rgba(255, 226, 233, 0.8);  
+  color: #DE2552; /* 버튼의 텍스트 색상 */
+  border-color: #ff9696; 
   border-radius: 100px; /* 버튼의 모서리를 둥글게 만듦 */
-  padding: 7px 6px; /* 버튼의 내부 여백 */
+  padding: 7px 7px; /* 버튼의 내부 여백 */
   box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+  border-width: 2px;
 }
 
 .modal-open-btn:hover {
@@ -71,19 +44,98 @@
   height: 40px;
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 8px;
 }
 
-.ocr-button {
-  border-radius: 16px;
-  width: 35px;
-  height:35px;
-  transform: translate(-320%, 30%);
+.modal-open-btn, .modal-close-btn {
+  cursor: pointer;
 }
 
-.input {
+
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: 25px;
-  margin-bottom: 1px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input_일정이름,
+.input_메모,
+input[type="date"],
+select {
+  width: calc(100% - 22px);
+  height: 40px;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size:15px;
+}
+
+input[type="date"]::before {content:attr(date-placeholder);width:100%}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {display: none}
+
+button[type="submit"] {
+  background-color: #ffa3a6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.new-schedule-title-modal {
+  font-size: 16px; /* 원하는 크기로 조정 */
+  font-weight: bold;
+  margin-bottom: 0px; /* 제목과 내용 간격 조정 */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 40%;
+}
+
+.new-schedule-modal-form {
+  width: 280px
+}
+
+.date-schedule-modal {
+  margin-right: 10px;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  width: 300px;
+  height: 400px;
+  padding: 15px;
+}
+
+.modal-content {
+  margin: 70% auto; /* 위에서 10%를 30%로 변경 */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 35px;
 }

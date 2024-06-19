@@ -11,32 +11,22 @@ const AccordionItem = ({ schedule, expected, income, expense, details, categoryI
 
     return (
         <div className={`accordion_item ${clicked ? "active" : ""}`}>
-            <button className="button" onClick={handleToggle}>
+            <button className="button-schedule-account" onClick={handleToggle}>
                 <div className="frame-title">
-                    {/* 카테고리 박스 */}
-                    <div className="category">
-                        <div className='rectangle-4062'>
-                          <div className="category-icon">
-                            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-                            <span className="material-symbols-outlined">
-                              event_note
-                            </span>
-                          </div>
-                        </div>
-                    </div>
+                    
                     {/* 일정-수입-지출 내용 */}
                     <div className='frame-1'>
                         <div className='schedule-expected'>
-                            <div className='div-2-span'>{schedule}</div>
-                            <div className="expected" >{expected}</div>
+                            <div className='div-2-span-accordion-item'>{schedule}</div>
+                            <div className="expected-accordion-item" >{expected}</div>
                         </div>
                         <div className='in-out'>
-                            <div className="income" >{income}</div>
-                            <div className="expense" >{expense}</div>
+                            <div className="income-accordion-item" >{income}</div>
+                            <div className="expense-accordion-item" >{expense}</div>
                         </div>
                     </div>
                 </div>
-                <span className="control">{clicked ? "-" : "+"} </span>
+                <span className="control-accordion-item">{clicked ? "-" : "+"} </span>
             </button>
             <div
                 ref={contentEl}

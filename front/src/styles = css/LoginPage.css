@@ -1,0 +1,134 @@
+.sign-up,
+.sign-up * {
+  box-sizing: border-box;
+}
+.sign-up {
+  background: #ffffff;
+  height: 760px;
+  position: relative;
+  overflow: hidden;
+}
+.page-title-login {
+  color: #000000;
+  text-align: center;
+  font-family: "DmSans-Bold", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 130px);
+  top: 300px;
+}
+.page-title2-login {
+  color: var(--gray-2, #4f4f4f);
+  text-align: center;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 160px);
+  top: 380px;
+  width: 317px;
+}
+.button-login {
+  width: 354px;
+  height: 60px;
+  position: absolute;
+  left: calc(50% - 155.97px);
+  top: 520px;
+}
+.rectangle-2-login {
+  background: #ffc6c6;
+  border-radius: 20px;
+  width: 90.89%;
+  height: 100%;
+  position: absolute;
+  left: calc(50% - 180.97px);
+  bottom: 0%;
+  top: 0%;
+}
+.page-title3-login {
+  color: #ffffff;
+  text-align: center;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  right: 0%;
+  left: calc(50% - 195.97px);
+  width: 100%;
+  bottom: 30%;
+  top: 33.33%;
+  height: 36.67%;
+}
+.div-login {
+  color: #b68e91;
+  text-align: center;
+  font-family: "DmSans-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: calc(50% - 175.97px);
+  top: 600px;
+  width: 354px;
+}
+.ellipse-811-login {
+  background: rgba(182, 142, 145, 0.28);
+  border-radius: 50%;
+  width: 62.72px;
+  height: 19.53px;
+  position: absolute;
+  left: calc(50% + 20.97px);
+  top: 250.23px;
+  transform-origin: 0 0;
+  transform: rotate(0.319deg) scale(1, 1);
+}
+.ellipse-812-login {
+  background: rgba(182, 142, 145, 0.28);
+  border-radius: 50%;
+  width: 58.07px;
+  height: 22.73px;
+  position: absolute;
+  left: calc(50% - 70.97px);
+  top: 200.41px;
+  transform-origin: 0 0;
+  transform: rotate(0.319deg) scale(1, 1);
+}
+.div2-login-happy {
+  height: auto;
+  position: absolute;
+  left: calc(50% - 20.97px);
+  top: 130.53px;
+  transform: translate(0px, -15.78px);
+  overflow: visible;
+}
+.div3-login-coin {
+  height: auto;
+  position: absolute;
+  left: calc(50% - 60.97px);
+  top: 100px;
+  transform: translate(-33.49px, 0px);
+  overflow: visible;
+}
+.ellipse-814-login {
+  background: rgba(255, 152, 152, 0.63);
+  border-radius: 50%;
+  width: 12.26px;
+  height: 6.88px;
+  position: absolute;
+  left: calc(50% + 5.03px);
+  top: 180.85px;
+  transform-origin: 0 0;
+  transform: rotate(-6.587deg) scale(0.999, 1.001);
+}
+.ellipse-815-login {
+  background: rgba(255, 152, 152, 0.63);
+  border-radius: 50%;
+  width: 12.26px;
+  height: 6.88px;
+  position: absolute;
+  left: calc(50% + 64.0px);
+  top: 165.98px;
+  transform-origin: 0 0;
+  transform: rotate(-6.587deg) scale(0.999, 1.001);
+}

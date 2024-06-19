@@ -34,6 +34,7 @@ export const ScheduleProvider = ({ children }) => {
         setAccordionData(data);
     };
 
+
     return (
         <ScheduleContext.Provider value={{ accordionData, updateAccordionData }}>
             {children}

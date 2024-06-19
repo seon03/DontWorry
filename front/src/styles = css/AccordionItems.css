@@ -12,8 +12,8 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 3rem auto 3rem;
-  padding: 0 10px;
+  margin: 3rem auto 1rem;
+  padding: 0 12px;
 }
 
 .heading {
@@ -31,14 +31,16 @@ body {
   border-radius: 15px;
   box-shadow: 2px 2px 6.5px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 10px; /* 각 아이템 사이의 간격 설정 */
-  max-width: 100%;
+  max-width: 340px;
 }
 
 
 
-.button {
+.button-schedule-account {
   font-size: 16px;
   background-color: #ffffff;
+  border-radius: 2px;
+  border-color: #444;
   color: #000000;
   text-align: left;
   font-weight: 700;
@@ -47,23 +49,29 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 8px;
+  padding: 15px 8px;
   cursor: pointer;
   border: none;
   border-radius: 15px;
+  padding-left: 20px;
 
 }
 
-.control {
+.control-accordion-item {
   font-size: 20px;
+  color: #cacaca;
 }
 
 .answer {
-  background-color: #cacaca;
+  background-color: #ffffff;
   color: hsl(0, 0%, 0%);
-  padding: 10px;
+  padding: 12px;
+  padding-right: 10px;
+  padding-left: 20px;
   border-radius: 0 0 15px 15px;
   font-family: "Segoe UI", Arial, sans-serif;
+  border-radius: 2px;
+  border-color: 2px;
 }
 
 .answer {
@@ -119,33 +127,6 @@ body {
 }
 
 
-.category {  /*카테고리 전체박스*/
-  flex-shrink: 0;
-  width: 35px;
-  height: 39px;
-  position: static;
-}
-
-.rectangle-4062 { /*카테고리 네모 스타일*/
-  border-radius: 3px;
-  border-style: solid;
-  border-color: #ffa6a6;
-  background: linear-gradient( to bottom, #FFB6B6 ,#FFF0D3 97%);
-  border-width: 1px;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  left: 2px;
-  top: 3px;
-
-}
-
-.category-icon {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .frame-1 { /*일정-수입지출 전체박스*/
   display: flex;
@@ -168,7 +149,7 @@ body {
   position: relative;
 }
 
-.div-2-span { /*일정 내용*/
+.div-2-span-accordion-item { /*일정 내용*/
   color: #000000;
   font-family: "Inter-Bold", sans-serif;
   font-size: 16px;
@@ -176,7 +157,7 @@ body {
   font-weight: 700;
 }
 
-.expected { /*예상지출*/
+.expected-accordion-item { /*예상지출*/
   color: #adadad;
   text-align: left;
   font-family: "Inter-SemiBold", sans-serif;
@@ -188,7 +169,7 @@ body {
   height: 16.03px;
 }
 
-.in-out { /*수입지출 전체박스*/
+.in-out-accordion-item { /*수입지출 전체박스*/
   display: flex;
   flex-direction: row;
   gap: 10%;
@@ -198,7 +179,7 @@ body {
   position: absolute;
 }
 
-.income {/*수입내용*/
+.income-accordion-item {/*수입내용*/
   color: #4cb5ff;
   text-align: right;
   font-family: "Inter-Bold", sans-serif;
@@ -206,15 +187,15 @@ body {
   line-height: 140%;
   font-weight: 700;
   position: relative;
-  width: 90px;
+  width: 85px;
   height: 16px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  left: 100px;
+  left: 0px;
 }
 
-.expense { /*지출내용*/
+.expense-accordion-item { /*지출내용*/
   color: #ff5880;
   text-align: cneter;
   font-family: "Inter-Bold", sans-serif;
@@ -227,6 +208,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  left: 60px;
-  gap: 10px;
+  left: 40px;
+  gap: 0px;
+}
+.expected-home-two {
+  color: #adadad;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 15px;
+  line-height: 100%;
+  font-weight: 600;
+  position: relative;
+  width: 200px;
+  height: 16.03px;
+  left: 125px;
 }

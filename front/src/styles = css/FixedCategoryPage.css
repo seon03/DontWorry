@@ -1,0 +1,94 @@
+.choose-fixed-expenses,
+.choose-fixed-expenses * {
+  box-sizing: border-box;
+}
+
+.choose-fixed-expenses {
+  background: #ffffff;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.div-fixed {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 32px;
+  top: 94px;
+  width: 308px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.div18-fixed {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 25px;
+  top: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.div2-fixed {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 169px;
+  top: 655px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangle-4293-fixed {
+  background: #ffc6c6;
+  width: 375px;
+  height: 59px;
+  position: absolute;
+  left: 0px;
+  top: 632px;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 150px; /* .div-fixed 아래에 위치하도록 설정 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.category-row {
+  display: flex;
+  justify-content: center;
+}
+
+.category-box {
+  padding: 10px;
+  margin: 5px;
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  border-radius: 11px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.category-box.selected {
+  border: 1px solid #FFD7D7;
+  background-color: #FFF1F6;
+}

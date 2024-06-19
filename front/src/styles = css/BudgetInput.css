@@ -1,0 +1,123 @@
+.monthly-budget,
+.monthly-budget * {
+  box-sizing: border-box;
+}
+.monthly-budget {
+  background: #ffffff;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-4295 {
+  background: #ffffff;
+  width: 308px;
+  height: 37px;
+  position: absolute;
+  left: 33px;
+  top: 158px;
+}
+.total-budget-input {
+    color: #787878;
+    text-align: left;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 32px;
+    top: 122px;
+    width: 273px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    outline: none; /* 포커스 효과 제거 */
+    background: none;
+    cursor: pointer; /* 커서 모양 변경 */
+    z-index: 1; /* 추가 */
+}
+
+.total-budget-input::placeholder {
+  color: #b9b9b9; /* 옅은 회색으로 변경 */
+}
+  
+.budget-input-simplify {
+  color: #b9b9b9;
+  text-align: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 36px;
+  top: 167px;
+  width: 301px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.line-223 {
+  width: 14948.77px;
+  height: 22230.5px;
+  position: absolute;
+  left: -5263.63px;
+  top: 8532.77px;
+  transform: translate(5263.63px, -8532.77px);
+  overflow: visible;
+}
+.line-228-budget-input {
+  border-style: solid;
+  border-color: #bdbdbd;
+  border-width: 1px 0 0 0;
+  width: 308px;
+  height: 0px;
+  position: absolute;
+  left: 33px;
+  top: 158px;
+  transform-origin: 0 0;
+  transform: rotate(0.186deg) scale(1, 1);
+}
+.입력하기-button {
+  background-color: #ffc6c6;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 0px;
+  top: 633px;
+  width: 375px;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.뒤로가기-button {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 25px;
+  top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.total-budget-input-title {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 32px;
+  top: 90px;
+  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
