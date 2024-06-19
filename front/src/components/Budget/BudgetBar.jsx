@@ -8,8 +8,8 @@ export const BudgetBar = () => {
                     <div className="rectangle-4037"></div>
                     <div className="rectangle-4038"></div>
                     </div>
-                    <div className="_324-000">324,000원</div>
-                    <div className="_64-8">64.8%</div>
+                    <div className="_324-000">125,300원</div>
+                    <div className="_64-8">20.8%</div>
                 </div>
     )
 }
