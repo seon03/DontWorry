@@ -71,6 +71,13 @@
 
 <br>
 
+## 구현 및 실행 방법
+
+[프론트엔드 구현 및 실행](https://github.com/keke5149/2023_DontWorry/blob/main/front/README.md)
+[백엔드 구현 및 실행](https://github.com/keke5149/2023_DontWorry/blob/main/back/README.md)
+
+<br>
+
 ## 포스터
 
 <img width=800 src="https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e" />
