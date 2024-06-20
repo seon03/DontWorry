@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img width="1000" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/fbb1c218-299f-4774-9fe7-72dd0eaa6769" />
+  <img width="800" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/fbb1c218-299f-4774-9fe7-72dd0eaa6769" />
   <br>
 </p>
 
@@ -32,7 +32,7 @@
 
 ## 프로젝트 구조도
 
-<img width="100%" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/81ec7ba5-2160-4ec2-abbe-1e0c3dd6768f" />
+<img width="800" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/81ec7ba5-2160-4ec2-abbe-1e0c3dd6768f" />
 
 <br> 
 
@@ -64,4 +64,4 @@
 
 ## 포스터
 
-<img width=100% src="https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e" />
+<img width=800 src="https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e" />
