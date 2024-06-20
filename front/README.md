@@ -4,7 +4,7 @@
 
 1. EC2 인스턴스 생성 후 서버 접속
    
-   <img alt="ec2 server" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/3a28d0db-3697-4044-9848-ce937b970bc6" width=800/>
+   <img alt="ec2 server" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/3a28d0db-3697-4044-9848-ce937b970bc6" width=500/>
 2. Nginx 설치 & 실행
    git bash에서 다음 명령어를 입력한다
    ```
@@ -13,14 +13,14 @@
    $ sudo service nginx start //nginx 실행 시작
    $ sudo service nginx status //nginx 실행 상태 확인
    ```
-   <img alt="nginx active" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/e177e624-e27b-414f-80e2-e867fb07c452" width=800/>
+   <img alt="nginx active" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/e177e624-e27b-414f-80e2-e867fb07c452" width=500/>
 3. EC2 인스턴스 페이지에서 인바운드 규칙을 설정하여 Nginx의 포트를 개방한다
  
    인바운드 규칙 편집
 4. 공개 IP로 접속한다
 5. 성공 화면
 
-   <img alt="ec2-nginx" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/66fd01d1-1431-48ec-a78e-ab8076fd0231" width=500/>
+   <img alt="ec2-nginx" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/66fd01d1-1431-48ec-a78e-ab8076fd0231" width=400/>
 
 
 ## 2) React application 생성
@@ -55,3 +55,5 @@
    $ sudo nginx -t
    $ sudo systemctl restart nginx
    ```
+   <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/1c4635bf-b38d-4525-9289-90785e538dcb" width=500/>
+
