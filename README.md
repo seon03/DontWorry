@@ -73,8 +73,9 @@
 
 ## 구현 및 실행 방법
 
-[프론트엔드 구현 및 실행](https://github.com/keke5149/2023_DontWorry/blob/main/front/README.md)
-[백엔드 구현 및 실행](https://github.com/keke5149/2023_DontWorry/blob/main/back/README.md)
+[프론트엔드](https://github.com/keke5149/2023_DontWorry/blob/main/front/README.md)
+
+[백엔드](https://github.com/keke5149/2023_DontWorry/blob/main/back/README.md)
 
 <br>
 
