@@ -69,4 +69,15 @@
    ```
    <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/4bbe3c49-63c4-4574-8004-a691c66f81ef" width=500/>
 
+2. node.js 및 npm 설치
+   ```
+   $ sudo apt update
+   $ sudo apt install npm
+   $ node -v //버전 출력
+   $ npm -v //버전 출력
+   ```
+   
+   
+   
+
 
