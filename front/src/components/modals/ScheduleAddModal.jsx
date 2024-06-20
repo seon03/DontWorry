@@ -1,6 +1,9 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../styles = css/AddModal.css";
+import axios from "axios";
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const ScheduleAddModal = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -28,11 +31,25 @@ const ScheduleAddModal = () => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Navigate to /home7 with formData
-        navigate("/home7", { state: formData });
-        setModalOpen(false);
+        try {
+            const response = await axios.post(`${BACKEND_URL}/api/v1/schedule`, {
+                title: formData.name,
+                memo: formData.memo,
+                date: formData.date,
+                category: formData.category
+            });
+            if (response.status === 201) {
+                // 일정 등록 성공 시 메인 화면으로 이동
+                navigate("/home5");
+            } 
+        } catch (error) {
+            console.error("Error while adding schedule:", error);
+            // 에러 처리 로직 추가
+        } finally {
+            setModalOpen(false); // 모달 닫기
+        }
     };
 
     return (
