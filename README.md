@@ -21,6 +21,11 @@
         <td width="20%" align="center"><a href= "https://github.com/chaeun7418">공채은</a></td>
     </tr>
     <tr width="100%">
+        <td width="20%" align="center"><img src = "https://github.com/keke5149.png"></td>
+        <td width="20%" align="center"><img src = "https://github.com/seon03.png"/></td>
+        <td width="20%" align="center"><img src = "https://github.com/chaeun7418.png"/></td>
+    </tr>
+    <tr width="100%">
         <td width="20%" align="center">리더, (백엔드) MySQL, Spring Framework, AWS, 데이터전처리</td>
         <td width="20%" align="center"> 팀원, (프론트엔드) Figma, React.js, AI</td>
         <td width="20%" align="center">팀원, (백엔드) OCR, MySQL, Spring Framework, AWS, AI</td>
