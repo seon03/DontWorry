@@ -7,7 +7,7 @@
 ## 프로젝트 소개
 
 <p align="justify">
-  돈 워리(Be happy) - 예산 사용량 예측 AI 기반 일정 캘린더·가계부 통합 모바일 웹 서비스
+  <b>돈 워리(Be happy) - 예산 사용량 예측 AI 기반 일정 캘린더·가계부 통합 모바일 웹 서비스</b>
 </p>
 <br>
 <p align="justify">
@@ -16,6 +16,12 @@
 
 <br>
 
+## 배포 링크
+
+### https://dontworry.o-r.kr
+
+<br>
+<br>
 
 ## 팀원 소개
 <table border="1" cellspacing="0" cellpadding="0" width="90%">
@@ -79,17 +85,28 @@
 
 <br>
 
-## 포스터
-
-<img width=800 src="https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e" />
-
-<br>
-
-## Youtube channel
+## Demo video (Youtube)
 
 <a href="https://www.youtube.com/watch?v=PgZ8Ug5eOuY&t">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://ytcards.demolab.com/?id=1lXaKEy97qE&title=GitHub+Star+Swag+Unboxing+and+Giveaways&lang=en&timestamp=1696868769&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=2&width=250&border_radius=5&duration=172">
-    <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/b954029b-f8b7-450d-a33d-c8b2f0e71b55?id=1lXaKEy97qE&title=GitHub+Star+Swag+Unboxing+and+Giveaways&lang=en&timestamp=1696868769&background_color=%23ffffff&title_color=%2324292f&stats_color=%2357606a&max_title_lines=2&width=250&border_radius=5&duration=172" alt="dont-worry-demo" title="dont worry demo" width=150>
+    <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/b954029b-f8b7-450d-a33d-c8b2f0e71b55?id=1lXaKEy97qE&title=GitHub+Star+Swag+Unboxing+and+Giveaways&lang=en&timestamp=1696868769&background_color=%23ffffff&title_color=%2324292f&stats_color=%2357606a&max_title_lines=2&width=250&border_radius=5&duration=172" alt="dont-worry-demo" title="dont worry demo" width=300>
   </picture>
 </a>
+
+<br>
+
+## 포스터 세션
+
+<details>
+<summary>펼쳐서 포스터 보기</summary>
+<div markdown="1">
+   
+![image](https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e)
+
+</div>
+</details>
+
+<br>
+
+

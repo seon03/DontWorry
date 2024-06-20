@@ -22,17 +22,15 @@
 git clone http://github.com/2023_DontWorry
 cd 2023_DontWorry/src
 ```
-<br>
-&nbsp;&nbsp;-환경 설정<br><br>
+<br><br><br>
+&nbsp;&nbsp;-빌드<br><br>
 ```
+./gradlew build
 ```
-<br>
-&nbsp;&nbsp;-패키지 설치<br><br>
-```
-```
-<br>
+<br><br><br>
 &nbsp;&nbsp;-실행<br><br>
 ```
+./gradlew bootRun
 ```
 <br><br><br>
 ## 2.기술 스택<br><br>
