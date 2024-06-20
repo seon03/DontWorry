@@ -1,6 +1,6 @@
 # 돈워리(Be Happy) Frontend
 
-## AWS EC2 + Nginx (+ React)
+## 1) AWS EC2 + Nginx (+ React)
 
 1. EC2 인스턴스 생성 후 서버 접속
    
@@ -23,7 +23,7 @@
    <img alt="ec2-nginx" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/66fd01d1-1431-48ec-a78e-ab8076fd0231" width=500/>
 
 
-### React application 생성 과정
+## 2) React application 생성
 
 (front 폴더 코드)
 
@@ -46,7 +46,12 @@
    ```
    react app 폴더에 build 파일이 생성된 것을 확인할 수 있다
 
-### Nginx로 React app 배포
+## 3) Nginx + React app 배포
 
 1. Nginx 폴더에서 html 폴더에 build 폴더 내용을 복사 붙여넣기 한다
 2. nginx.conf 파일을 수정한다
+3. nginx 설정 테스트 및 재시작
+   ```
+   $ sudo nginx -t
+   $ sudo systemctl restart nginx
+   ```
