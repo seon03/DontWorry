@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img width="100%" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/fbb1c218-299f-4774-9fe7-72dd0eaa6769" />
+  <img width="500" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/fbb1c218-299f-4774-9fe7-72dd0eaa6769" />
   <br>
 </p>
 
@@ -61,3 +61,6 @@
 
 <br>
 
+## 포스터
+
+<img width=100% src="https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e" />
