@@ -16,9 +16,9 @@
 ## 팀원 소개
 <table border="1" cellspacing="0" cellpadding="0" width="90%">
     <tr width="100%">
-        <td width="20%" align="center"><a href= "https://github.com/yhjune">이규민</a></td>
-        <td width="20%" align="center"><a href= "https://github.com/sunnyineverywhere">서선아</a></td>
-        <td width="20%" align="center"><a href= "https://github.com/penguin1109">공채은</a></td>
+        <td width="20%" align="center"><a href= "https://github.com/keke5149">이규민</a></td>
+        <td width="20%" align="center"><a href= "https://github.com/seon03">서선아</a></td>
+        <td width="20%" align="center"><a href= "https://github.com/chaeun7418">공채은</a></td>
     </tr>
     <tr width="100%">
         <td width="20%" align="center">리더, (백엔드) MySQL, Spring Framework, AWS, 데이터전처리</td>
