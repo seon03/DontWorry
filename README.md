@@ -70,3 +70,24 @@
 ## 포스터
 
 <img width=800 src="https://github.com/keke5149/2023_DontWorry/assets/108112575/a3c1f980-e9e5-43db-bcf2-0c9e09f5a52e" />
+
+<br>
+
+## Youtube channel
+
+# ~/.github/workflows/youtube-card.yaml
+
+name: GitHub Readme YouTube Cards
+on:
+  schedule:
+    # Runs every hour, on the hour
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: DenverCoder1/github-readme-youtube-cards@main
+        with:
+          channel_id: @Behappy-pr3fy
