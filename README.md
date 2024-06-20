@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <img width="500" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/fbb1c218-299f-4774-9fe7-72dd0eaa6769" />
+  <img width="1000" src="https://github.com/keke5149/2023_DontWorry/assets/108112575/fbb1c218-299f-4774-9fe7-72dd0eaa6769" />
   <br>
 </p>
 
