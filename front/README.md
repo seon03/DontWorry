@@ -25,7 +25,7 @@
 
 ## 2) React application 생성
 
-(front 폴더 코드)
+(github front 폴더)
 
 1. node.js 설치(구글에서 사이트 검색)
 2. react 설치하고자 하는 폴더열고
@@ -55,5 +55,18 @@
    $ sudo nginx -t
    $ sudo systemctl restart nginx
    ```
-   <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/1c4635bf-b38d-4525-9289-90785e538dcb" width=500/>
+   
+
+1. github에 있는 [react 코드](https://github.com/keke5149/2023_DontWorry/tree/main/front)를 가져온다. (repository 전체를 git cloning 하는 것이 아니라 repository의 front 폴더만 가져오는 방법)
+   ```
+   $ git intit //git 초기화
+   $ git config core.sparseCheckout true //Sparse Checkout 기능 활성화
+   $ git remote add -f origin https://github.com/seon03/2023_DontWorry.git //clone하기 원하는 remote 저장소의 주소 선언
+   $ echo front/ >> .git/info/sparse-checkout //front 폴더 path 선언
+   $ git pull origin main //pull
+   $ cat .git/info/sparse-checkout //front 폴더가 가져와졌는지 확인
+   $ ls -l front //front의 react 코드가 다 들어왔는지 확인
+   ```
+   <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/4bbe3c49-63c4-4574-8004-a691c66f81ef" width=500/>
+
 
