@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import ScheduleAddModal from "../components/modals/ScheduleAddModal";
 import AccountAddModal from "../components/modals/AccountAddModal";
@@ -7,9 +7,25 @@ import { ScheduleProvider } from "../contexts/ScheduleContext";
 import '../styles = css/HomePage5.css';
 import '../styles = css/AddModal.css';
 
-
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 function HomePage5() {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                fetch(`${BACKEND_URL}/api/v1/schedule`);
+                const jsonData = await Response.json();
+                setData(jsonData); //받아온 data를 state에 저장
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData(); //컴포넌트가 마운트될 때 데이터를 불러옴
+    }, []); //[]를 넣어 한 번만 호출되도록 설정 (의존성 배열을 빈 배열로 설정)
+
     return (
         <ScheduleProvider>
             <div className="home-bg-hp5">
