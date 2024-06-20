@@ -75,19 +75,9 @@
 
 ## Youtube channel
 
-# ~/.github/workflows/youtube-card.yaml
-
-name: GitHub Readme YouTube Cards
-on:
-  schedule:
-    # Runs every hour, on the hour
-    - cron: "0 * * * *"
-  workflow_dispatch:
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: DenverCoder1/github-readme-youtube-cards@main
-        with:
-          channel_id: @Behappy-pr3fy
+<a href="https://www.youtube.com/watch?v=PgZ8Ug5eOuY&t">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://ytcards.demolab.com/?id=1lXaKEy97qE&title=GitHub+Star+Swag+Unboxing+and+Giveaways&lang=en&timestamp=1696868769&background_color=%230d1117&title_color=%23ffffff&stats_color=%23dedede&max_title_lines=2&width=250&border_radius=5&duration=172">
+    <img src="https://ytcards.demolab.com/?id=1lXaKEy97qE&title=GitHub+Star+Swag+Unboxing+and+Giveaways&lang=en&timestamp=1696868769&background_color=%23ffffff&title_color=%2324292f&stats_color=%2357606a&max_title_lines=2&width=250&border_radius=5&duration=172" alt="GitHub Star Swag Unboxing and Giveaways" title="GitHub Star Swag Unboxing and Giveaways">
+  </picture>
+</a>
