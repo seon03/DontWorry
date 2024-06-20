@@ -18,7 +18,7 @@
 
 ## 배포 링크
 
-### https://dontworry.com
+### https://dontworry.o-r.kr
 
 <br>
 <br>
