@@ -46,6 +46,177 @@
    ```
    react app 폴더에 build 파일이 생성된 것을 확인할 수 있다
 
+## 디렉토리 구조
+
+```
+dont-worry
+│  .env
+│  .gitignore
+│  package-lock.json
+│  package.json
+│  README.md
+│  가계부1.csv
+│  가계부2.csv
+│  
+├─public
+│      dontworrylogo.png
+│      dontworrylogo2.png
+│      favicon.ico
+│      index.html
+│      logo192.png
+│      logo512.png
+│      manifest.json
+│      robots.txt
+│      
+└─src
+    │  App.css
+    │  App.js
+    │  App.test.js
+    │  bootstrap.min.css
+    │  data.json
+    │  index.css
+    │  index.js
+    │  logo.svg
+    │  reportWebVitals.js
+    │  setupTests.js
+    │  
+    ├─assets
+    │      bgimg.png
+    │      bgimg2.png
+    │      Dony_목표.png
+    │      Dony_챌린지_설정.png
+    │      Dony_친구랑.png
+    │      happy1.png
+    │      Happy_친구랑.png
+    │      profileimg.png
+    │      문자내역.png
+    │      문자내역_한글.png
+    │      뱃지_coin.png
+    │      뱃지_gift.png
+    │      뱃지_key.png
+    │      뱃지_pig.png
+    │      영수증_샐러드.png
+    │      주머니_친구랑.png
+    │      추천_1.png
+    │      추천_2.png
+    │      추천_3.png
+    │      추천_4.png
+    │      현금_친구랑.png
+    │      
+    ├─components
+    │  ├─Account
+    │  │      Accordion.jsx
+    │  │      AccordionHeader.jsx
+    │  │      AccordionItem.jsx
+    │  │      AccordionItems.jsx
+    │  │      AccountList.jsx
+    │  │      data.js
+    │  │      ScheduleAccount.jsx
+    │  │      UnexpectedItem.jsx
+    │  │      
+    │  ├─Budget
+    │  │      BudgetBar.jsx
+    │  │      BudgetCircle.jsx
+    │  │      BudgetCircleTotal.jsx
+    │  │      BudgetInput.jsx
+    │  │      BudgetLiquidCircle.jsx
+    │  │      BudgetLiquidCircle2.jsx
+    │  │      BudgetScheduleCircle.jsx
+    │  │      BudgetScheduleCircle2.jsx
+    │  │      BudgetStatus.jsx
+    │  │      ModifyLiquidCircle.jsx
+    │  │      ParentLiquidCircle.jsx
+    │  │      sourceData.json
+    │  │      
+    │  ├─Header
+    │  │      Header.jsx
+    │  │      ProfileStatus.jsx
+    │  │      
+    │  ├─modals
+    │  │      AccountAddModal.jsx
+    │  │      DayFilterModal.jsx
+    │  │      MonthFilterModal.jsx
+    │  │      ScheduleAddModal.jsx
+    │  │      
+    │  └─ui
+    │          AlertButton.jsx
+    │          BottomNav.jsx
+    │          CustomDate.jsx
+    │          MenuButton.jsx
+    │          MonthFilterButton.jsx
+    │          NewItemButton.jsx
+    │          TextInput.jsx
+    │          UploadButton.jsx
+    │          
+    ├─config
+    ├─constants
+    ├─contexts
+    │      ScheduleContext.jsx
+    │      
+    ├─hooks = hoc
+    ├─pages
+    │      BudgetBubblePage.jsx
+    │      ChallengePage.jsx
+    │      DontWorryOnboarding.jsx
+    │      FixedCategoryPage.jsx
+    │      GoalDescribePage.jsx
+    │      GoalInputPage.jsx
+    │      GoogleLoginPage.jsx
+    │      HomePage.jsx
+    │      HomePage4.jsx
+    │      HomePage5.jsx
+    │      HomePage6.jsx
+    │      HomePage7.jsx
+    │      HomeThrd.jsx
+    │      HomeTwo.jsx
+    │      LoginPage.jsx
+    │      LowExpChallengePage.jsx
+    │      OCRPage.jsx
+    │      SortBudgetPage.jsx
+    │      StatisticPage.jsx
+    │      
+    ├─styles = css
+    │      AccordionHeader.css
+    │      AccordionItems.css
+    │      AccountAddModal.css
+    │      AccountList.css
+    │      AddModal.css
+    │      BottomNav.css
+    │      BudgetBar.css
+    │      BudgetCircle.css
+    │      BudgetCircleTotal.css
+    │      BudgetInput.css
+    │      BudgetLiquidCircle.css
+    │      BudgetStatus.css
+    │      ChallengePage.css
+    │      DontWorryOnboarding.css
+    │      FixedCategoryPage.css
+    │      GoalDescribePage.css
+    │      GoalInputPage.css
+    │      GoogleLoginPage.css
+    │      Header.css
+    │      HomePage.css
+    │      HomePage4.css
+    │      HomePage5.css
+    │      LoginPage.css
+    │      LowExpChallengePage.css
+    │      ModifyLiquidCircle.css
+    │      MonthFilterButton.css
+    │      OCRPage.css
+    │      ProfileStatus.css
+    │      SortBudget.css
+    │      StatisticPage.css
+    │      UnexpectedItem.css
+    │      UploadButton.css
+    │      
+    └─utils
+            addComma.jsx
+            
+```
+
+<br>
+   
+
 ## 3) Nginx + React app 배포
 
 1. github에 있는 [react 코드](https://github.com/keke5149/2023_DontWorry/tree/main/front)를 가져온다. (repository 전체를 git cloning 하는 것이 아니라 repository의 front 폴더만 가져오는 방법)
