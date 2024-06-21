@@ -48,15 +48,6 @@
 
 ## 3) Nginx + React app 배포
 
-1. Nginx 폴더에서 html 폴더에 build 폴더 내용을 복사 붙여넣기 한다
-2. nginx.conf 파일을 수정한다
-3. nginx 설정 테스트 및 재시작
-   ```
-   $ sudo nginx -t
-   $ sudo systemctl restart nginx
-   ```
-   
-
 1. github에 있는 [react 코드](https://github.com/keke5149/2023_DontWorry/tree/main/front)를 가져온다. (repository 전체를 git cloning 하는 것이 아니라 repository의 front 폴더만 가져오는 방법)
    ```
    $ git intit //git 초기화
@@ -76,7 +67,14 @@
    $ node -v //버전 출력
    $ npm -v //버전 출력
    ```
-   
+
+3. npm run build 실행
+4. build 파일 옮기기
+5. nginx 설치 및 실행
+6. EC2 인스턴스 퍼블릭 ip 주소 이동
+7. 배포 완료 페이지
+   <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/7ef062c1-1286-4339-a312-bd46054ec3ab" width=200/>
+
    
    
 
