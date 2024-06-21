@@ -73,6 +73,7 @@
 5. nginx 설치 및 실행
 6. EC2 인스턴스 퍼블릭 ip 주소 이동
 7. 배포 완료 페이지
+   
    <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/7ef062c1-1286-4339-a312-bd46054ec3ab" width=200/>
 
    
