@@ -48,6 +48,10 @@
 
 ## 디렉토리 구조
 
+<details>
+<summary>펼쳐서 디렉토리 구조 보기</summary>
+<div markdown="1">
+   
 ```
 dont-worry
 │  .env
@@ -213,6 +217,9 @@ dont-worry
             addComma.jsx
             
 ```
+
+</div>
+</details>
 
 <br>
    
