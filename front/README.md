@@ -91,9 +91,11 @@
    ```
    인증서 발급 성공
   <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/e56cbb36-1521-465e-8b27-d1e2646368e3" width=500/>
+
    ```
    $ sudo service nginx restart//nginx 재시작
    ```
+
    http에서 https로 입력해도 접속 가능해진다
-   접속하기 -> https://dontworry.o-r.kr
+   모바일에서 접속하기 -> https://dontworry.o-r.kr
 
