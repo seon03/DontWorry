@@ -20,6 +20,8 @@
 
 ### https://dontworry.o-r.kr
 
+(모바일에서 열기)
+
 <br>
 <br>
 
