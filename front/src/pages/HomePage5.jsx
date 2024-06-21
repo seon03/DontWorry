@@ -9,13 +9,15 @@ import '../styles = css/AddModal.css';
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
+//10.240.185.68:3000/home5  -EWHA6e Wifi 연결
 function HomePage5() {
     const [data, setData] = useState([]);
 
+    {/*}
     useEffect(() => {
         const fetchData = async () => {
             try {
-                fetch(`${BACKEND_URL}/api/v1/schedule`);
+                fetch(`${BACKEND_URL}/api/v1/main`);
                 const jsonData = await Response.json();
                 setData(jsonData); //받아온 data를 state에 저장
             } catch (error) {
@@ -24,13 +26,21 @@ function HomePage5() {
         };
 
         fetchData(); //컴포넌트가 마운트될 때 데이터를 불러옴
-    }, []); //[]를 넣어 한 번만 호출되도록 설정 (의존성 배열을 빈 배열로 설정)
+    }, []);
+    */}
 
     return (
         <ScheduleProvider>
             <div className="home-bg-hp5">
                 <div style={{}}>
                     <Header />
+                    {/*
+                    <ul>
+                        {data.map(item => (
+                        <li key={item.id}>{item.name}</li>
+                        ))}
+                    </ul>
+                    */}
                     <div className="first-schedule-account-hp5">
                         <div className="line-231-hp5"></div>
                         <div className="_5-32-hp5">

@@ -1,13 +1,20 @@
 import React from 'react';
 import "../styles = css/LoginPage.css";
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
+
+const googleClientId = 'dontworry.testuser@gmail.com';
+const redirectUri = 'http://localhost:3000/home5';
+const backendAuthUrl = 'http://ec2-54-180-205-174.ap-northeast-2.compute.amazonaws.com:8080/oauth2/authorization/google';
+
 
 function LoginPage() {
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
     const navigateToGoogle = () => {
-        navigate('/googleLogin');
-    }
+        const googleAuthUrl = `${backendAuthUrl}?redirect_uri=${encodeURIComponent(redirectUri)}`;
+        window.location.href = googleAuthUrl;
+    };
+
     return (
         <div className="sign-up">
         <div className="page-title-login">
@@ -26,7 +33,7 @@ function LoginPage() {
             <div className="rectangle-2-login"></div>
             <div className="page-title3-login">회원가입</div>
         </div>
-        <div className="div-login" onClick={navigateToGoogle}>로그인해서 캘린더 불러오기</div>
+        <div className="div-login" onClick={navigateToGoogle}>로그인하기</div>
         <div className="ellipse-811-login"></div>
         <div className="ellipse-812-login"></div>
         <svg

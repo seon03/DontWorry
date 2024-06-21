@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import BottomNav from './components/ui/BottomNav';
-import AccountAddModal from './components/modals/AccountAddModal';
-import ScheduleAddModal from './components/modals/ScheduleAddModal';
 import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
