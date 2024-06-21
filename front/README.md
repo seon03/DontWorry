@@ -72,11 +72,28 @@
 4. build 파일 옮기기
 5. nginx 설치 및 실행
 6. EC2 인스턴스 퍼블릭 ip 주소 이동
-7. 배포 완료 페이지
+7. 도메인 구매
+8. cloudflare에 등록(DNS)
+   
+   퍼블릭 IP 주소로 수정하기
+   
+9. 배포 완료 페이지
    
    <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/7ef062c1-1286-4339-a312-bd46054ec3ab" width=200/>
 
-   
-   
+10. 보안
 
+    웹사이트를 안전하게 보호하기 위해 SSL 인증서를 발급한다
+    ```
+    $ sudo apt-get install certbot python3-certbot-nginx //certbot 설치 - 인증서 생성할 수 있음
+    $ sudo certbot --nginx -d <domain-name> //dontworry.o-r.kr -> 이메일 입력
+    $ sudo systemctl reload nginx
+   ```
+   인증서 발급 성공
+  <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/e56cbb36-1521-465e-8b27-d1e2646368e3" width=500/>
+   ```
+   $ sudo service nginx restart//nginx 재시작
+   ```
+   http에서 https로 입력해도 접속 가능해진다
+   접속하기 -> https://dontworry.o-r.kr
 
