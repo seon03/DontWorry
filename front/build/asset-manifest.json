@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.19ecbb3a.css",
-    "main.js": "/static/js/main.890fffec.js",
+    "main.js": "/static/js/main.b7e8a67c.js",
     "static/js/453.b5cf65a0.chunk.js": "/static/js/453.b5cf65a0.chunk.js",
     "static/media/추천_2.png": "/static/media/추천_2.e1e8e0c510c6df0ad773.png",
     "static/media/주머니_친구랑.png": "/static/media/주머니_친구랑.90717ad460a1af5d0d4b.png",
@@ -19,11 +19,11 @@
     "static/media/Happy_친구랑.png": "/static/media/Happy_친구랑.58e433408ba59d67753b.png",
     "index.html": "/index.html",
     "main.19ecbb3a.css.map": "/static/css/main.19ecbb3a.css.map",
-    "main.890fffec.js.map": "/static/js/main.890fffec.js.map",
+    "main.b7e8a67c.js.map": "/static/js/main.b7e8a67c.js.map",
     "453.b5cf65a0.chunk.js.map": "/static/js/453.b5cf65a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19ecbb3a.css",
-    "static/js/main.890fffec.js"
+    "static/js/main.b7e8a67c.js"
   ]
 }
