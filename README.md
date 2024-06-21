@@ -20,6 +20,14 @@
 
 ### https://dontworry.o-r.kr
 
+(모바일에서 열기)
+
+```
+// 테스트 계정
+dontworry.testuser@gmail.com
+dontworrybehappy123
+```
+
 <br>
 <br>
 
