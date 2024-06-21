@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.19ecbb3a.css",
+    "main.js": "/static/js/main.04bd1724.js",
+    "static/js/453.b5cf65a0.chunk.js": "/static/js/453.b5cf65a0.chunk.js",
+    "static/media/추천_2.png": "/static/media/추천_2.e1e8e0c510c6df0ad773.png",
+    "static/media/주머니_친구랑.png": "/static/media/주머니_친구랑.90717ad460a1af5d0d4b.png",
+    "static/media/뱃지_coin.png": "/static/media/뱃지_coin.2bff0bdad534e4145159.png",
+    "static/media/현금_친구랑.png": "/static/media/현금_친구랑.5925fdc93411a7f7b7f4.png",
+    "static/media/뱃지_pig.png": "/static/media/뱃지_pig.22c259a6e3753475065e.png",
+    "static/media/뱃지_key.png": "/static/media/뱃지_key.90a64fe50439c355cf6a.png",
+    "static/media/뱃지_gift.png": "/static/media/뱃지_gift.6f644f8d92822c889778.png",
+    "static/media/추천_1.png": "/static/media/추천_1.f8259c984abff1567156.png",
+    "static/media/Dony_친구랑.png": "/static/media/Dony_친구랑.0c4ff472812d65a4e629.png",
+    "static/media/추천_3.png": "/static/media/추천_3.d4598f2cdaf20e801fa5.png",
+    "static/media/추천_4.png": "/static/media/추천_4.1ee0b02c756776b6ca39.png",
+    "static/media/문자내역.png": "/static/media/문자내역.51d6720d8348cca2d014.png",
+    "static/media/Dony_목표.png": "/static/media/Dony_목표.448d22714639b16570a7.png",
+    "static/media/Happy_친구랑.png": "/static/media/Happy_친구랑.58e433408ba59d67753b.png",
+    "index.html": "/index.html",
+    "main.19ecbb3a.css.map": "/static/css/main.19ecbb3a.css.map",
+    "main.04bd1724.js.map": "/static/js/main.04bd1724.js.map",
+    "453.b5cf65a0.chunk.js.map": "/static/js/453.b5cf65a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19ecbb3a.css",
+    "static/js/main.04bd1724.js"
+  ]
+}
