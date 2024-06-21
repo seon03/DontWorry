@@ -259,7 +259,9 @@ dont-worry
    
    <img src="https://github.com/keke5149/2023_DontWorry/assets/108112575/7ef062c1-1286-4339-a312-bd46054ec3ab" width=200/>
 
-10. 보안
+<br>
+
+## 보안
 
     웹사이트를 안전하게 보호하기 위해 SSL 인증서를 발급한다
     
