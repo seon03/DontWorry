@@ -45,7 +45,7 @@ dontworrybehappy123
     </tr>
     <tr width="100%">
         <td width="20%" align="center">리더, (백엔드) MySQL, Spring Framework, AWS, 데이터전처리</td>
-        <td width="20%" align="center"> 팀원, (프론트엔드) Figma, React.js, AI</td>
+        <td width="20%" align="center"> 팀원, (프론트엔드) Figma, React.js, AWS, Nginx, AI</td>
         <td width="20%" align="center">팀원, (백엔드) OCR, MySQL, Spring Framework, AWS, AI</td>
    </tr>
 </table>
