@@ -77,7 +77,7 @@ dontworrybehappy123
 
 - AI
   
-&nbsp; <img alt="easyocr" src ="https://img.shields.io/badge/MLflow-0194E2.svg?&style=for-the-badge&logo=easyocr&logoColor=white"/>
+&nbsp; <img alt="easyocr" src ="https://img.shields.io/badge/easyocr-0194E2.svg?&style=for-the-badge&logo=easyocr&logoColor=white"/>
 <img alt="Flask" src ="https://img.shields.io/badge/Flask-000000.svg?&style=for-the-badge&logo=Flask&logoColor=white"/>
 <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" />
 
